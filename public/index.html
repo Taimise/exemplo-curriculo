@@ -24,13 +24,25 @@
                                 class=" card-image" alt="imagem de perfil">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Taimise Fernanda Walter</h5>
+                            <h5 class="card-title" style="text-align: center" id="nome-no-html"></h5>
                             <hr class="hr">
-                            <p style="text-align: center;">Estudante</p>
+                            <p style="text-align: center" id="cargo-no-html"></p>
 
                             <div class="botoes-card">
-                                <a href="https://instagram.com/fernanda.nw/" class="btn mr-1" id="btn-sobre">
-                                    Sobre</a>
+                                <button 
+                                    onClick="clickNoSobre()"
+                                    class="btn mr-1"
+                                    id="btn-sobre"
+                                >
+                                    Sobre
+                                </button>
+                                <button 
+                                    onClick="clickNoProjetos()"
+                                    class="btn ml-1 btn-card"
+                                    id="btn-projeto"
+                                >
+                                    Projetos
+                                </button>
                             </div>
 
                             <div class="icon-redes-sociais">
@@ -45,14 +57,26 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6 text-body">
-                    <div class="text">
+                    <div class="text" id="texto-1">
                         <h1 class="title-text">Olá,</h1>
                         <H4 class="title-subtitle">Bem vindo meu currículo</H4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <p> 
                             It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                        </p>
+                    </div>
+
+                    <div class="text" id="texto-2">
+                        <h1 class="title-text">Projetos</h1>
+                        <H4 class="title-subtitle">Alguns projetos que trabalhei</H4>
+                        <p>
+                            <a target="_blank"href="https://www.growdev.com.br">
+                                Site da Growdev - Este site foi desenvolvido em ReactJS.
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -97,6 +121,7 @@
         </div>
     </footer>
 
+    <script src="./js/index.js"></script>
     <script src="./assets/bootstrap-4.5.3"></script>
 </body>
 
